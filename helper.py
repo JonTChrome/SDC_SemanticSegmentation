@@ -28,10 +28,7 @@ def maybe_download_pretrained_vgg(data_dir):
     """
     vgg_filename = 'vgg.zip'
     vgg_path = os.path.join(data_dir, 'vgg')
-    vgg_files = [
-        os.path.join(vgg_path, 'variables/variables.data-00000-of-00001'),
-        os.path.join(vgg_path, 'variables/variables.index'),
-        os.path.join(vgg_path, 'saved_model.pb')]
+    vgg_files = [os.path.join(vgg_path, 'variables/variables.data-00000-of-00001'), os.path.join(vgg_path, 'variables/variables.index'), os.path.join(vgg_path, 'saved_model.pb')]
 
     missing_vgg_files = [vgg_file for vgg_file in vgg_files if not os.path.exists(vgg_file)]
     if missing_vgg_files:
