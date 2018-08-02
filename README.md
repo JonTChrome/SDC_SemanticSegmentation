@@ -21,4 +21,3 @@ Define the batch size and number of epoch and this function runs the training op
 
 #### run
 The main entry point for the FCN to construct, train and validate on images.  This function calls the previous functions in succession to test the network and finishes by calling the helper function to validate the network on the test images.
-
